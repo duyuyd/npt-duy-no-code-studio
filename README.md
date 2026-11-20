@@ -1,4 +1,4 @@
-# NPT Duy Studio — Phase 1
+# NuvoraCraft — Phase 1
 
 Nền tảng no-code mới cho Founder NPT Duy, tách biệt với Góc Hợp Âm. Phạm vi hiện tại: schema Supabase, RLS, Supabase Auth và giao diện Founder đổi màu, tiêu đề, cờ cấu hình. Trình kéo thả, export, thanh toán và EAS **chưa được triển khai**.
 
