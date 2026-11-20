@@ -1,4 +1,4 @@
-# NPT Duy Studio — Phase 1
+# NuvoraCraft — Phase 1
 
 Nền tảng no-code mới cho Founder NPT Duy, tách biệt với Góc Hợp Âm. Phạm vi hiện tại: schema Supabase, RLS, Supabase Auth và giao diện Founder đổi màu, tiêu đề, cờ cấu hình. Trình kéo thả, export, thanh toán và EAS **chưa được triển khai**.
 
@@ -51,3 +51,7 @@ Kiểm tra: `npm run typecheck`, `npm run test:rls`, `npm run build`. Test RLS c
 - User chỉ được truy cập project/page mình sở hữu. `profiles.role` và `subscription_plan` không thể thay đổi trực tiếp từ client.
 - Cập nhật settings là một transaction; RLS bảo vệ ngay cả khi gọi database trực tiếp. Chỉ SQL Editor hoặc backend tin cậy mới được cấp quyền Founder.
 - Giá trị mặc định trong `schema.sql` là cấu hình ban đầu lưu trong database, không phải dữ liệu giả trong component. Cờ AI chỉ là cấu hình và không kích hoạt dịch vụ AI nào.
+
+## NuvoraCraft brand / Capacitor APK on feature branch
+
+This older independent Next.js prototype is branded as part of NuvoraCraft, but it **does not share the production SaaS deployment** automatically. Puter.js is loaded after hydration; it is not an API key nor a promise of free unlimited AI. The Capacitor workflow uses a remote **HTTPS website** and only builds after the repository variable `APK_WEB_URL` is configured to this prototype's real deployment. Without a real URL it does not manufacture a working APK. Existing Supabase data and build pipelines are left unchanged. PR is held for Founder `VERIFIED` before merge.
